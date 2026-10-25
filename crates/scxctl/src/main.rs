@@ -529,12 +529,7 @@ mod tests {
     }
 
     /*
-     * Shared --args semantics vector.
-     *
-     * Both scxctl and scxtui depend on shell-words directly and must
-     * agree on these outcomes; there is deliberately no shared helper
-     * crate. When touching this table, copy it verbatim into the scxtui
-     * custom-args tests (and vice versa).
+     * --args semantics vector.
      *
      * Inputs are the chunks as produced by clap's value_delimiter(','),
      * i.e. already comma-split.
